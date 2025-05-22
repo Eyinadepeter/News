@@ -29,13 +29,17 @@ function Footer() {
         >
           Sport
         </Link>
-        <div className="grid grid-cols-5 grid-row-1 gap-5 mt-10 max-w-3xl">
-          <h1>Carrer</h1>
-          <h1>About</h1>
-          <h1>Api</h1>
-          <h1>Contact</h1>
-          <h1>Location</h1>
-        </div>
+      </div>
+      <div className="grid grid-cols-3 grid-row-2 gap-5 mt-10 max-w-3xl">
+        <h1>Carrer</h1>
+        <h1>About</h1>
+        <h1>Api</h1>
+        <h1>Contact</h1>
+        <h1>Location</h1>
+        <h1>Privacy</h1>
+        <h1>Vision</h1>
+        <h1>Project</h1>
+        <h1>Partner</h1>
       </div>
     </div>
   );
