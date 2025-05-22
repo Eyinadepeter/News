@@ -19,19 +19,19 @@ function header() {
           Home
         </Link>
         <Link
-          href="#"
+          href="/politics"
           className="mr-10 text-xl mt-5 px-5 border-b-2 border-transparent hover:border-black"
         >
           Politics
-        </Link>{" "}
+        </Link>
         <Link
-          href="#"
+          href="/bussiness"
           className="mr-10 text-xl mt-5 px-5 border-b-2 border-transparent hover:border-black"
         >
           Bussiness
         </Link>
         <Link
-          href="#"
+          href="/sport"
           className="mr-10 text-xl mt-5 px-5 border-b-2 border-transparent hover:border-black"
         >
           Sport
