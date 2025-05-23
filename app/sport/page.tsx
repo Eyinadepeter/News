@@ -4,12 +4,7 @@ function sport() {
   return (
     <div>
       sport news
-      <P></P>
-      <P></P>
-      <P></P>
-      <P></P>
-      <P></P>
-      <P></P>
+      
     </div>
   );
 }
