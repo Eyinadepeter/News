@@ -1,0 +1,34 @@
+{
+  "id": "image_content",
+  "type": "SharedSlice",
+  "name": "ImageContent",
+  "description": "ImageContent",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "primaryimage": {
+          "type": "Image",
+          "config": {
+            "label": "primary.image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "primarycaption": {
+          "type": "Text",
+          "config": {
+            "label": "primary.caption",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
