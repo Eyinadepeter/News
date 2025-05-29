@@ -9,7 +9,8 @@
       "uid": {
         "type": "UID",
         "config": {
-          "label": "UID"
+          "label": "category",
+          "placeholder": ""
         }
       },
       "title": {
@@ -26,13 +27,6 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        }
-      },
-      "color": {
-        "type": "Color",
-        "config": {
-          "label": "Color",
-          "placeholder": ""
         }
       }
     }

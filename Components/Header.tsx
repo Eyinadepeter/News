@@ -22,7 +22,11 @@ function header() {
           href="/politics"
           className="mr-10 text-xl mt-5 px-5 border-b-2 border-transparent hover:border-black"
         >
-          Politics
+           <Link
+          href="/politics"
+          className="mr-10 text-xl mt-5 px-5 border-b-2 border-transparent hover:border-black"
+        ></Link>
+          News
         </Link>
         <Link
           href="/bussiness"
