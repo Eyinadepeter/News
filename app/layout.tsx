@@ -2,6 +2,15 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import * as prismic from '@prismicio/client'
+
+export const repositoryName = 'newsslice' // replace with your repo name
+
+export const createClient = (config = {}) => {
+  const client = prismic.createClient(repositoryName, config)
+  return client
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
