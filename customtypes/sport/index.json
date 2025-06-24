@@ -42,28 +42,6 @@
           "label": "Published",
           "placeholder": ""
         }
-      },
-      "link": {
-        "type": "Link",
-        "config": {
-          "label": "link",
-          "placeholder": "",
-          "select": null,
-          "allowTargetBlank": true,
-          "allowText": true,
-          "repeat": true
-        }
-      },
-      "slices": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
-        "config": {
-          "choices": {
-            "customer_logos": {
-              "type": "SharedSlice"
-            }
-          }
-        }
       }
     }
   }

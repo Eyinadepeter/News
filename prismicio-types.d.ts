@@ -175,8 +175,6 @@ export type PoliticsDocument<Lang extends string = string> =
     Lang
   >;
 
-type SportDocumentDataSlicesSlice = CustomerLogosSlice;
-
 /**
  * Content for sport documents
  */
@@ -224,30 +222,6 @@ interface SportDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#date
    */
   published: prismic.DateField;
-
-  /**
-   * link field in *sport*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: sport.link
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  link: prismic.Repeatable<
-    prismic.LinkField<string, string, unknown, prismic.FieldState, never>
-  >;
-
-  /**
-   * Slice Zone field in *sport*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: sport.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<SportDocumentDataSlicesSlice>;
 }
 
 /**
@@ -562,7 +536,6 @@ declare module "@prismicio/client" {
       PoliticsDocumentData,
       SportDocument,
       SportDocumentData,
-      SportDocumentDataSlicesSlice,
       TrendingDocument,
       TrendingDocumentData,
       AllDocumentTypes,

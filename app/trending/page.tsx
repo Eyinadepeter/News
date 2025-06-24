@@ -1,7 +1,7 @@
 import { createClient } from "@/prismicio";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
-
+import Link from "next/link";
 
 export default async function TrendingPage() {
   const client = createClient();
@@ -14,17 +14,19 @@ export default async function TrendingPage() {
       <h1 className="text-2xl font-bold">Trending</h1>
       <div className="max-w-2xl w-full space-y-6">
         {documents.map((doc) => (
-          <div
-            key={doc.id}
-            className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
-          >
-            <h2 className="text-xl font-semibold mb-2 text-black">
-              {doc.data.title}
-            </h2>
-            <PrismicRichText field={doc.data.description} />
-            {doc.data.published}
-            <PrismicNextImage field={doc.data.featured_image} />
-          </div>
+          <Link key={doc.id} href={`/story/${doc.uid}`}>
+            <div
+              key={doc.id}
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+            >
+              <h2 className="text-xl font-semibold mb-2 text-black">
+                {doc.data.title}
+              </h2>
+              <PrismicRichText field={doc.data.description} />
+              {doc.data.published}
+              <PrismicNextImage field={doc.data.featured_image} />
+            </div>
+          </Link>
         ))}
       </div>
       <footer className="text-sm text-gray-500">Footer content here</footer>
