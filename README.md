@@ -9,7 +9,6 @@ npm run dev
 yarn
 # orhhh
 hh
-# or
 bun dev
 ```
 
