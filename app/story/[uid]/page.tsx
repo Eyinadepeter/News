@@ -18,6 +18,7 @@ export default async function StoryPage({ params }: StoryPageParams) {
       <p>
         <PrismicRichText field={story.data.description} />
       </p>
+<p> <\p>
     </article>
   );
 }
