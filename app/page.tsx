@@ -8,7 +8,7 @@ export default function Home() {
       <Header/>
       <h1>Hi from Home</h1>
       <h1>Hi from Home</h1>
-      <h1>Hi from Home</h1>
+     
       <h1>Hi from Home</h1>
       <Footer/>
     </div>
